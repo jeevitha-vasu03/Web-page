@@ -1,0 +1,34 @@
+<body style="background-color:#6F2DAE ;">
+  <br>
+  <br>
+  <p class="text-center para">Find a Courses</p>
+  <div>
+      <h2 class="text-center head">Featured Courses</h2>
+      <hr size="`20" width="100px" style="padding: 2px" class="line">
+  </div>
+  <div class=" text-center container grid">
+      <div class="row "  >
+        <div class="col-sm-4 col1 " *ngFor = "let contents1 of content1">
+          <img [src] = "contents1.imageUrls" style="height: 200%; width: 80%">
+          <p>{{contents1.name}}</p>
+          <p>{{contents1.description}}</p>
+          <a href="#"><button class="btn btn-primary">More</button></a>
+        </div>
+        <div class="col-sm col2" *ngFor = "let contents2 of content2">
+          <img [src] = "contents2.imageUrls" style="height: 50%; width: 50%">
+          <p>{{contents2.name}}</p>
+          <p>{{contents2.description}}</p>
+          <a href="#"><button class="btn btn-primary">More</button></a>
+        </div>
+        <div class="col-sm col3" *ngFor = "let contents3 of content3">
+          <img [src] = "contents3.imageUrls" style="height: 50%; width: 50%">
+          <p>{{contents3.name}}</p>
+          <p>{{contents3.description}}</p>
+          <a href="#"><button class="btn btn-primary">More</button></a>
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+    <h5 class="text-center" style="color: white; font-family:'Courier New', Courier, monospace">Images from <b> <u><a href="https://www.google.com/" style="color: white;">Google </a></u></b></h5>
+  </body>
